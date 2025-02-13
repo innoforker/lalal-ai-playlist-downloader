@@ -1,5 +1,5 @@
 #!/bin/bash
 # Removes all segment-*.mp3 files
 
-rm -f segment-*.mp3
+rm -f segments/segment-*.mp3
 echo "Done"
