@@ -13,4 +13,8 @@ Use bash script segment_cleaner.sh / Используйте скрипт segment
 ![Screenshot from 2025-02-13 18-56-38](https://github.com/user-attachments/assets/2896859c-3804-4b7c-abee-5c9e43ae505b)
 
 # Нужно соединить сегменты?
-Используйте https://www.happyscribe.com/audio-tools/mp3-joiner
+Используйте https://www.happyscribe.com/audio-tools/mp3-joiner  
+Для перегонки .wav в .mp3 в помощь ffmpeg  
+```bash
+ffmpeg -i file.wav file.mp3
+```
