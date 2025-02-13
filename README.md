@@ -5,5 +5,5 @@
 - Via Network tab get the playlist link / Получите ссылку на плейлист через вкладку Сеть (в браузере)
 - Paste it into the script / Вставьте в скрипт
 
-# If it need to remove segments / Если нужно удалить сегменты
+# If it needed to remove segments / Если нужно удалить сегменты
 Use bash script segment_cleaner.sh / Используйте скрипт segment_cleaner.sh
