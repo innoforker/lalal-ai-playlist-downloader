@@ -3,10 +3,17 @@
 # fast written tool for instant using
 
 from requests import get
+import os
 link = input("Enter the link to the playlist: ")
 file_name_segment = "segment-{}.mp3"
+all_files = sorted(os.listdir("."))
+last_segment = 0
 
-for num_segment in range(1000):
+# [1] because [0] is "main.py"
+if all_files[1].startswith("segment"):
+        last_segment = int(os.path.splitext(all_files[1].replace("segment-", ""))) + 1
+
+for num_segment in range(last_segment, 1000):
     segment_link = link
     if not link.endswith("/"):
         segment_link += "/"
