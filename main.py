@@ -11,7 +11,7 @@ last_segment = 0
 
 for file in all_files:
         if file.startswith("segment-"):
-                last_segment = int(file[8:-4])
+                last_segment = int(file[8:-4]) # from segment- to .mp3
                 break
 
 for num_segment in range(last_segment, 1000):
