@@ -10,7 +10,7 @@ all_files = sorted(os.listdir("segments"))
 last_segment = 0
 
 if all_files[0].startswith("segment"):
-        last_segment = int(os.path.splitext(all_files[0].replace("segment-", ""))) + 1
+        last_segment = int(os.path.splitext(all_files[0].replace("segment-", ""))[0]) + 1
 
 for num_segment in range(last_segment, 1000):
     segment_link = link
